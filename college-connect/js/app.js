@@ -28,6 +28,7 @@
   const todayStr = () => ccDay(0);
   const fmtDate = (s) => { const [y, m, d] = s.split("-").map(Number); return new Date(y, m - 1, d).toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric" }); };
   const timeNow = (d = new Date()) => d.toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit" });
+  const to12 = (t) => { const [h, m] = t.split(":").map(Number); return new Date(2000, 0, 1, h, m).toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit" }); };
   function toast(msg) {
     const t = Object.assign(document.createElement("div"), { className: "toast", textContent: msg, role: "status" });
     document.body.append(t);
@@ -94,7 +95,7 @@
         progress: p, segment: i, arrived,
         lat: a.lat + (b.lat - a.lat) * t, lng: a.lng + (b.lng - a.lng) * t,
         status: arrived ? "Arrived" : "On the way",
-        eta: arrived ? "Arrived" : timeNow(new Date(Date.now() + mins * 60000)),
+        eta: arrived ? "Arrived" : to12(bus.stops[bus.stops.length - 1].time),
         mins, current: a.name, next: b.name
       };
     }
@@ -116,8 +117,8 @@
     const shell = document.createElement("div");
     shell.className = "app";
     shell.innerHTML = `
-      <aside class="sidebar"><div class="brand"><span class="logo"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${ICON.bus}</svg></span><span>College Connect<small>Student &amp; campus transport</small></span></div><nav class="nav" aria-label="Main">${nav}</nav></aside>
-      <div class="main"><header class="topbar"><span class="mini-brand">College Connect</span>
+      <aside class="sidebar"><div class="brand"><span class="logo"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${ICON.bus}</svg></span><span>FMCET Campus<small>Student &amp; campus transport</small></span></div><nav class="nav" aria-label="Main">${nav}</nav></aside>
+      <div class="main"><header class="topbar"><span class="mini-brand">FMCET Campus</span>
         <div class="who"><div class="who-text"><strong>${esc(student.name)}</strong><small>${esc(student.id)}</small></div><div class="avatar" aria-hidden="true">${esc(initials(student.name))}</div>
         <button class="btn secondary small" id="logoutBtn">Log out</button></div></header>
         <main class="content" id="content"></main></div>`;

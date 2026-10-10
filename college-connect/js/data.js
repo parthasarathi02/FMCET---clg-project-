@@ -117,47 +117,47 @@ window.CC_DATA = {
   buses: [
     {
       routeId: "R1",
-      routeName: "Route 1 - Tambaram to College",
-      regNo: "TN 11 AB 1234",
+      routeName: "Bus 7 - MADURAI to College",
+      regNo: "TN 123456",
       driver: "Demo Driver (sample)",
       stops: [
-        { name: "Tambaram Bus Stand", lat: 12.9249, lng: 80.1000, time: "07:10" },
-        { name: "Chromepet", lat: 12.9516, lng: 80.1462, time: "07:25" },
-        { name: "Pallavaram", lat: 12.9675, lng: 80.1491, time: "07:35" },
-        { name: "Guindy", lat: 13.0067, lng: 80.2206, time: "07:55" },
-        { name: "College Campus", lat: 13.0358, lng: 80.2330, time: "08:20" }
+        { name: "St.Michael HSS Bus Stand", lat: 12.9249, lng: 80.1000, time: "07:45" },
+        { name: "Krishanapuram Colony", lat: 12.9516, lng: 80.1462, time: "08:00" },
+        { name: "B.B kulam", lat: 12.9675, lng: 80.1491, time: "08:05" },
+        { name: "Pandi Kovil", lat: 13.0067, lng: 80.2206, time: "08:32" },
+        { name: "FMCET Campus", lat: 13.0358, lng: 80.2330, time: "08:45" }
       ]
     },
     {
       routeId: "R2",
-      routeName: "Route 2 - Anna Nagar to College",
-      regNo: "TN 11 CD 5678",
+      routeName: "Bus 13 - Thiru Nagar to College",
+      regNo: "TN 5678",
       driver: "Demo Driver (sample)",
       stops: [
-        { name: "Anna Nagar West", lat: 13.0850, lng: 80.2101, time: "07:20" },
-        { name: "Koyambedu", lat: 13.0694, lng: 80.1948, time: "07:35" },
-        { name: "Vadapalani", lat: 13.0500, lng: 80.2121, time: "07:50" },
-        { name: "Nandanam", lat: 13.0319, lng: 80.2406, time: "08:05" },
-        { name: "College Campus", lat: 13.0358, lng: 80.2330, time: "08:20" }
+        { name: "Thiru Nagar", lat: 13.0850, lng: 80.2101, time: "07:30" },
+        { name: "Palanganatham", lat: 13.0694, lng: 80.1948, time: "07:50" },
+        { name: "Madura_clg", lat: 13.0500, lng: 80.2121, time: "07:55" },
+        { name: "Ring Road", lat: 13.0319, lng: 80.2406, time: "08:30" },
+        { name: "FMCET Campus", lat: 13.0358, lng: 80.2330, time: "09:00" }
       ]
     },
     {
       routeId: "R3",
-      routeName: "Route 3 - Velachery to College",
+      routeName: "Bus 32 - Kancharam Pettai to College",
       regNo: "TN 11 EF 9012",
       driver: "Demo Driver (sample)",
       stops: [
-        { name: "Velachery", lat: 12.9791, lng: 80.2209, time: "07:30" },
-        { name: "Adyar", lat: 13.0067, lng: 80.2570, time: "07:45" },
-        { name: "Mylapore", lat: 13.0368, lng: 80.2676, time: "08:00" },
-        { name: "College Campus", lat: 13.0358, lng: 80.2330, time: "08:20" }
+        { name: "Kancharam Pettai", lat: 12.9791, lng: 80.2209, time: "07:30" },
+        { name: "Thiruppalai", lat: 13.0067, lng: 80.2570, time: "07:45" },
+        { name: "Surya Nagar", lat: 13.0368, lng: 80.2676, time: "08:45" },
+        { name: "FMCET Campus", lat: 13.0358, lng: 80.2330, time: "09:00" }
       ]
     }
   ],
 
   announcements: [
     { date: ccDay(-1), title: "Internal Assessment 2 timetable released", text: "IA-2 begins next week. Check the notice board for the schedule." },
-    { date: ccDay(-3), title: "Bus Route 2 timing change", text: "Route 2 will leave 10 minutes earlier on Friday (sample notice)." },
+    { date: ccDay(-3), title: "Bus 13 timing change", text: "Bus 13 will leave 10 minutes earlier on Friday (sample notice)." },
     { date: ccDay(-6), title: "Library extended hours", text: "Library stays open until 7 PM during the assessment week." }
   ]
 };
