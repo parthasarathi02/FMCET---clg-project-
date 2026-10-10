@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log in - College Connect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="login">
+  <div class="login-page">
+    <section class="login-art">
+      <div>
+        <h1>Your campus day, in one place.</h1>
+        <p>Timetable, attendance, the college bus and assignments, without checking four different notice boards.</p>
+      </div>
+      <svg viewBox="0 0 520 220" fill="none" aria-hidden="true">
+        <path d="M20 180 C120 180 120 60 220 60 S340 170 430 120 500 40 500 40" stroke="#2c4577" stroke-width="6" stroke-linecap="round"/>
+        <path d="M20 180 C120 180 120 60 220 60" stroke="#ffc629" stroke-width="6" stroke-linecap="round"/>
+        <circle cx="20" cy="180" r="9" fill="#0f1f3d" stroke="#fff" stroke-width="4"/>
+        <circle cx="220" cy="60" r="14" fill="#ffc629" stroke="#0f1f3d" stroke-width="4"/>
+        <circle cx="430" cy="120" r="9" fill="#0f1f3d" stroke="#fff" stroke-width="4"/>
+        <circle cx="500" cy="40" r="9" fill="#0f1f3d" stroke="#fff" stroke-width="4"/>
+      </svg>
+    </section>
+    <section class="login-form">
+      <div class="login-card">
+        <h2 style="font-size:1.6rem">Log in to College Connect</h2>
+        <p class="sub" style="margin-bottom:6px">Use your student ID and password.</p>
+        <div id="loginMsg" class="notice bad" role="alert" hidden></div>
+        <form id="loginForm" novalidate>
+          <label for="studentId">Student ID</label>
+          <input id="studentId" type="text" autocomplete="username" placeholder="CS2301">
+          <div class="field-error" id="idError"></div>
+          <label for="password" style="margin-top:6px">Password</label>
+          <div class="pw-row"><input id="password" type="password" autocomplete="current-password"><button type="button" id="togglePw">Show</button></div>
+          <div class="field-error" id="pwError"></div>
+          <button class="btn bus" type="submit" style="width:100%;margin-top:10px">Log in</button>
+        </form>
+        <div class="demo-box"><strong>Demo mode.</strong> ID <code>CS2301</code>, password <code>demo123</code>
+          <button class="btn secondary small" type="button" id="fillDemo" style="margin-left:6px">Fill it in</button>
+          <div style="margin-top:6px;color:#5f6b83">This prototype login is not secure. Real login will use Firebase Authentication.</div></div>
+      </div>
+    </section>
+  </div>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

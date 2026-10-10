@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bus tracking - College Connect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="bus">
+  <div id="page-content" hidden>
+    <h1>Bus tracking</h1>
+    <div class="notice info"><strong>Simulated demo.</strong> The bus moves on a schedule made by the app, not by GPS. Real tracking needs a GPS tracker or a driver's phone sending its location.</div>
+
+    <div class="card">
+      <div class="row">
+        <div class="grow"><label for="routeSelect" style="margin-top:0">Route</label><select id="routeSelect"></select></div>
+        <button class="btn bus" id="refreshBtn">Refresh location</button>
+        <label style="margin:0;font-weight:500"><input type="checkbox" id="autoToggle" checked> Move automatically</label>
+      </div>
+    </div>
+
+    <div class="grid cols-4">
+      <div class="card stat"><div class="label">Bus number</div><div class="value sm" id="busReg">-</div></div>
+      <div class="card stat"><div class="label">Status</div><div class="value sm" id="busStatus">-</div></div>
+      <div class="card stat"><div class="label">Current stop</div><div class="value sm" id="busCurrent">-</div></div>
+      <div class="card stat"><div class="label">Next stop</div><div class="value sm" id="busNext">-</div></div>
+    </div>
+    <div class="grid cols-2">
+      <div class="card stat"><div class="label">Expected at campus</div><div class="value sm" id="busEta">-</div></div>
+      <div class="card stat"><div class="label">Last update</div><div class="value sm" id="busUpdated">-</div></div>
+    </div>
+
+    <div class="card">
+      <div id="mapNote" class="notice warn" hidden>Some map tiles did not load. You may be offline. Markers and the route list still work.</div>
+      <div id="map"></div>
+    </div>
+
+    <div class="grid cols-2">
+      <div class="card"><h2>Route progress</h2><div class="progress" style="height:14px"><span id="routeBar" style="width:0"></span></div><small id="routePct" style="color:#5f6b83"></small></div>
+      <div class="card"><h2>Stops</h2><ul class="stops" id="stopList"></ul></div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

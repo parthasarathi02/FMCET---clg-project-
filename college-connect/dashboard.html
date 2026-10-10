@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard - College Connect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="dashboard">
+  <div id="page-content" hidden>
+    <h1 id="welcome">Welcome back</h1>
+    <p class="sub" id="dateLine"></p>
+
+    <div class="hero">
+      <section class="card ticket" aria-label="College bus">
+        <div class="ticket-main" id="ticketMain"></div>
+        <div class="ticket-side"><small>Expected at campus</small><div class="eta" id="ticketEta">-</div><small id="ticketNote"></small></div>
+      </section>
+      <section class="card ring-card" aria-label="Attendance">
+        <div class="ring" id="ring"><b id="statAttendance">-</b></div>
+        <div><h2>Attendance</h2><div class="stat"><div class="note" id="statAttendanceNote"></div></div></div>
+      </section>
+    </div>
+
+    <div class="grid cols-3">
+      <div class="card stat"><div class="label">Pending assignments</div><div class="value" id="statPending">-</div><div class="note">Pending and overdue</div></div>
+      <div class="card stat"><div class="label">Next class</div><div class="value" id="statNext">-</div><div class="note" id="statNextNote"></div></div>
+      <div class="card stat"><div class="label">Classes today</div><div class="value" id="statToday">-</div><div class="note">Sample timetable</div></div>
+    </div>
+
+    <div class="grid cols-2">
+      <div class="card"><h2>Today's classes</h2><div id="todayClasses"></div></div>
+      <div class="card"><h2>Recent notices</h2><div id="notices"></div></div>
+    </div>
+
+    <div class="grid cols-3 quick" style="margin-top:18px">
+      <a href="academic.html"><span class="ico"><svg viewBox="0 0 24 24"><path d="M4 5a2 2 0 012-2h13v15H6a2 2 0 00-2 2zM4 20a2 2 0 002 2h13v-4"/><path d="M9 8h6"/></svg></span><span><strong>Academic</strong><span class="t">Timetable, attendance, materials</span></span></a>
+      <a href="bus.html"><span class="ico"><svg viewBox="0 0 24 24"><path d="M5 3h14a1 1 0 011 1v13H4V4a1 1 0 011-1zM4 11h16M7 21v-4M17 21v-4"/></svg></span><span><strong>Bus tracking</strong><span class="t">Route, stops and map</span></span></a>
+      <a href="assignments.html"><span class="ico"><svg viewBox="0 0 24 24"><path d="M9 3h6v3H9zM7 5H5v16h14V5h-2M9 12h6M9 16h4"/></svg></span><span><strong>Assignments</strong><span class="t">Search and update status</span></span></a>
+    </div>
+    <p class="sub" style="margin-top:18px;font-size:.85rem">All figures are sample data. The bus position is simulated.</p>
+  </div>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

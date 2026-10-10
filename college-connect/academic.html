@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Academic - College Connect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="academic">
+  <div id="page-content" hidden>
+    <h1>Academic</h1>
+    <p class="sub">Timetable, attendance and study materials. All values are sample data.</p>
+    <div class="tabs" role="tablist">
+      <button class="tab active" data-tab="timetable">Timetable</button>
+      <button class="tab" data-tab="attendance">Attendance</button>
+      <button class="tab" data-tab="materials">Study materials</button>
+    </div>
+
+    <section class="card" data-panel="timetable">
+      <label for="daySelect" style="margin-top:0">Day</label>
+      <select id="daySelect" style="max-width:240px"></select>
+      <div class="table-wrap" style="margin-top:14px"><table>
+        <thead><tr><th>Time</th><th>Subject</th><th>Faculty</th><th>Classroom</th></tr></thead>
+        <tbody id="timetableBody"></tbody></table></div>
+    </section>
+
+    <section class="card" data-panel="attendance" hidden>
+      <div class="stat" style="margin-bottom:12px"><div class="label">Overall attendance</div><div class="value" id="overallPct">-</div><div class="note" id="overallNote"></div></div>
+      <div id="attWarn" class="notice warn" hidden><strong>Attendance warning.</strong> <span id="lowList"></span></div>
+      <p class="sub" style="margin-bottom:10px;font-size:.88rem">Percentage = classes attended / classes conducted &times; 100. Overall = total attended / total conducted.</p>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Subject</th><th>Attended</th><th>Conducted</th><th>%</th><th>Progress</th><th>Status</th></tr></thead>
+        <tbody id="attendanceBody"></tbody></table></div>
+    </section>
+
+    <section class="card" data-panel="materials" hidden>
+      <input id="matSearch" type="search" placeholder="Search by subject or title" aria-label="Search materials" style="max-width:360px;margin-bottom:14px">
+      <div id="materialList"></div>
+    </section>
+  </div>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

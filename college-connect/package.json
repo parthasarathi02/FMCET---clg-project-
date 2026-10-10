@@ -1,0 +1,7 @@
+{
+  "name": "college-connect",
+  "version": "1.0.0",
+  "description": "College Connect - student and campus transport mini project (demo)",
+  "scripts": { "start": "node server/server.js" },
+  "license": "MIT"
+}
