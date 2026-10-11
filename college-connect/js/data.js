@@ -121,11 +121,11 @@ window.CC_DATA = {
       regNo: "TN 123456",
       driver: "Demo Driver (sample)",
       stops: [
-        { name: "St.Michael HSS Bus Stand", lat: 12.9249, lng: 80.1000, time: "07:45" },
-        { name: "Krishanapuram Colony", lat: 12.9516, lng: 80.1462, time: "08:00" },
-        { name: "B.B kulam", lat: 12.9675, lng: 80.1491, time: "08:05" },
-        { name: "Pandi Kovil", lat: 13.0067, lng: 80.2206, time: "08:32" },
-        { name: "FMCET Campus", lat: 13.0358, lng: 80.2330, time: "08:45" }
+        { name: "St.Michael HSS Bus Stand", lat: 9.97395435821262, lng: 78.12687784921567, time: "07:45" },
+        { name: "Krishanapuram Colony", lat: 9.94792634313924, lng: 78.12697681929433, time: "08:00" },
+        { name: "B.B kulam", lat: 9.943281366964284, lng: 78.1235855118864, time: "08:05" },
+        { name: "Pandi Kovil", lat: 9.945098348421125, lng: 78.16476978009266, time: "08:32" },
+        { name: "FMCET Campus", lat: 9.875316712077872, lng: 78.27382479173207, time: "08:45" }
       ]
     },
     {
@@ -134,11 +134,11 @@ window.CC_DATA = {
       regNo: "TN 5678",
       driver: "Demo Driver (sample)",
       stops: [
-        { name: "Thiru Nagar", lat: 13.0850, lng: 80.2101, time: "07:30" },
-        { name: "Palanganatham", lat: 13.0694, lng: 80.1948, time: "07:50" },
-        { name: "Madura_clg", lat: 13.0500, lng: 80.2121, time: "07:55" },
-        { name: "Ring Road", lat: 13.0319, lng: 80.2406, time: "08:30" },
-        { name: "FMCET Campus", lat: 13.0358, lng: 80.2330, time: "09:00" }
+        { name: "Thiru Nagar", lat: 9.883031992620618, lng: 78.05289922812365, time: "07:30" },
+        { name: "Palanganatham", lat:9.907002455432261, lng: 78.09354712722197, time: "07:50" },
+        { name: "Madura_clg", lat: 9.90946522569859, lng: 78.10926972668878, time: "07:55" },
+        { name: "Ring Road", lat:9.900761195071333, lng: 78.16541773776395, time: "08:30" },
+        { name: "FMCET Campus", lat: 9.875316712077872, lng: 78.27382479173207, time: "09:00" }
       ]
     },
     {
@@ -147,10 +147,10 @@ window.CC_DATA = {
       regNo: "TN 11 EF 9012",
       driver: "Demo Driver (sample)",
       stops: [
-        { name: "Kancharam Pettai", lat: 12.9791, lng: 80.2209, time: "07:30" },
-        { name: "Thiruppalai", lat: 13.0067, lng: 80.2570, time: "07:45" },
-        { name: "Surya Nagar", lat: 13.0368, lng: 80.2676, time: "08:45" },
-        { name: "FMCET Campus", lat: 13.0358, lng: 80.2330, time: "09:00" }
+        { name: "Kancharam Pettai", lat: 10.051526573355414, lng: 78.16714087535757, time: "07:30" },
+        { name: "Thiruppalai", lat: 9.976818537307034, lng: 78.1381000622648, time: "07:45" },
+        { name: "Surya Nagar", lat: 9.962968612427149, lng: 78.15873936725846, time: "08:45" },
+        { name: "FMCET Campus", lat: 9.875316712077872, lng: 78.27382479173207, time: "09:00" }
       ]
     }
   ],
